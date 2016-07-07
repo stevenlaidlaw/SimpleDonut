@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			body {
+				background-color: #eee;
+			}
+
+			body > div {
+				margin: 2em;
+				background-color: white;
+				padding: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="chartOne"></div>
+		<div id="chartTwo"></div>
+		<div id="chartThree"></div>
+		<div id="chartFour"></div>
+		<div id="chartFive"></div>
+
+		<script src="simpledonut.js"></script>
+		<script>
+			simpledonut.render(document.getElementById("chartOne"), 50, 20, '#eee', '#aaa', 35);
+			simpledonut.render(document.getElementById("chartTwo"), 80, 10, '#e4e', '#77a', 99);
+			simpledonut.render(document.getElementById("chartThree"), 30, 15, '#4ee', '#7aa', 76);
+			simpledonut.render(document.getElementById("chartFour"), 40, 5, '#ee4', '#aa7', 49);
+			simpledonut.render(document.getElementById("chartFive"), 100, 12, '#aae', '#a7a', 57);
+		</script>
+	</body>
+</html>
