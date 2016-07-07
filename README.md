@@ -21,4 +21,4 @@ simpledonut.render(element, radius, thickness, bgColor, fgColor, value);
 simpledonut.render(document.getElementById("chartOne"), 50, 20, '#eee', '#aaa', 35);
 ```
 
-Look at the test.html file for further clarification.
+Look at the test.html file for a full, working example.
