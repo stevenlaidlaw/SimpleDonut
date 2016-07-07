@@ -13,9 +13,10 @@ simpledonut.render(element, radius, thickness, bgColor, fgColor, value);
 ```
 
 **element** must be called using the standard JS getElementById. JQuery is not supported at this time.
+
 **value** must be a value out of 100%. Non-percentage values and multiple sub-sections of the donut are not supported, and are unlikely to ever be.
 
-*Example:*
+## Example
 ```javascript
 simpledonut.render(document.getElementById("chartOne"), 50, 20, '#eee', '#aaa', 35);
 ```
