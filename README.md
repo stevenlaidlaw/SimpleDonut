@@ -9,7 +9,7 @@ Include the simpledonut.js file in your html:
 
 Call the render function in your javascript as so:
 ```javascript
-simpledonut.render(*element*, *radius*, *thickness*, *bgColor*, *fgColor*, *value*);
+simpledonut.render(element, radius, thickness, bgColor, fgColor, value);
 ```
 
 **element** must be called using the standard JS getElementById. JQuery is not supported at this time.
