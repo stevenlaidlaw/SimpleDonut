@@ -11,6 +11,13 @@
 				background-color: white;
 				padding: 1em;
 			}
+
+			#chartSix .value {
+				font-size: 150%;
+				text-transform: uppercase;
+				color: orange;
+				font-family: "Comic Sans MS", sans-serif;
+			}
 		</style>
 	</head>
 	<body>
@@ -19,14 +26,16 @@
 		<div id="chartThree"></div>
 		<div id="chartFour"></div>
 		<div id="chartFive"></div>
+		<div id="chartSix"></div>
 
-		<script src="simpledonut.js"></script>
+		<script src="simpledonut.js.min"></script>
 		<script>
-			simpledonut.render(document.getElementById("chartOne"), 50, 20, '#eee', '#aaa', 35);
-			simpledonut.render(document.getElementById("chartTwo"), 80, 10, '#e4e', '#77a', 99);
-			simpledonut.render(document.getElementById("chartThree"), 30, 15, '#4ee', '#7aa', 76);
-			simpledonut.render(document.getElementById("chartFour"), 40, 5, '#ee4', '#aa7', 49);
-			simpledonut.render(document.getElementById("chartFive"), 100, 12, '#aae', '#a7a', 57);
+			simpledonut.render(document.getElementById("chartOne"), 50, 20, [35,65], ['#666','#ccc'], '35%');
+			simpledonut.render(document.getElementById("chartTwo"), 80, 10, [138], ['#77a']);
+			simpledonut.render(document.getElementById("chartThree"), 30, 15, [76,24], ['#4ee','#7aa']);
+			simpledonut.render(document.getElementById("chartFour"), 140, 50, [49,11,24,53,13,35], ['#ee4','#aa7','#a52','#42a','#529','#ef7']);
+			simpledonut.render(document.getElementById("chartFive"), 100, 20, [57,57,32], ['#aae','#a7a','#7aa'], 'Values');
+			simpledonut.render(document.getElementById("chartSix"), 200, 60, [12,11], ['green','pink'], 'Boys = Green');
 		</script>
 	</body>
 </html>

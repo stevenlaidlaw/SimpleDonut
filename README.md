@@ -9,16 +9,27 @@ Include the simpledonut.js file in your html:
 
 Call the render function in your javascript as so:
 ```javascript
-simpledonut.render(element, radius, thickness, bgColor, fgColor, value);
+simpledonut.render(element, radius, thickness, values[], colors[], centerText);
 ```
 
 **element** must be called using the standard JS getElementById. JQuery is not supported at this time.
 
-**value** must be a value out of 100%. Non-percentage values and multiple sub-sections of the donut are not supported, and are unlikely to ever be.
+**values** and **colors** are both arrays. If there are less colors than values, it will probably crash or at least render weird.
+
+**centerText** is an optional field and will put whatever text you specify in the center of the donut. This can be styled using the .value class under whichever div you specified.
+
+```
+#chartSix .value {
+    font-size: 150%;
+    text-transform: uppercase;
+    color: orange;
+    font-family: "Comic Sans MS", sans-serif;
+}
+```
 
 ## Example
 ```javascript
-simpledonut.render(document.getElementById("chartOne"), 50, 20, '#eee', '#aaa', 35);
+simpledonut.render(document.getElementById("chartFive"), 100, 20, [57,57,32], ['#aae','#a7a','#7aa'], 'Values');
 ```
 
 Look at the test.html file for a full, working example.
