@@ -1,5 +1,5 @@
 # SimpleDonut
-Library for building simple, static SVG donut charts based on percentages. I built this for use in my own projects when I couldn't find anything simple that could do it for me.
+Library for building simple, static SVG donut charts. I built this for use in my own projects when I couldn't find anything simple that could do it for me.
 
 ## Usage
 Include the simpledonut.js file in your html:
