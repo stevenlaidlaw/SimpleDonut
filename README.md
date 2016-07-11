@@ -18,7 +18,7 @@ simpledonut.render(element, radius, thickness, values[], colors[], centerText);
 
 **centerText** is an optional field and will put whatever text you specify in the center of the donut. This can be styled using the .value class under whichever div you specified.
 
-```
+```css
 #chartSix .value {
     font-size: 150%;
     text-transform: uppercase;
